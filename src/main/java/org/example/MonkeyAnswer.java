@@ -19,7 +19,7 @@ public class MonkeyAnswer
     public static void main( String[] args )
     {
         Selenide.open(URL);
-        $("select[id='93003956']").selectOption(DEV_INDEX);
+        $(".select").selectOption(DEV_INDEX);
 
         $$(BOXES).forEach(e -> {
             int randomInt = new Random().ints(1, 2, 4).findFirst().getAsInt();
@@ -27,6 +27,5 @@ public class MonkeyAnswer
         });
         $(SUBMIT_BTN).click();
         $(FINAL_MESSAGE).shouldHave(Text.exactTextCaseSensitive("Хотите создавать опросы сами?"));
-        System.out.println();
     }
 }
