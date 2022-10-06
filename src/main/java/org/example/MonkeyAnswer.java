@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.$$;
 
 public class MonkeyAnswer {
 
-    private static final String URL = "https://ru.surveymonkey.com/r/G2Z237H";
+    private static final String URL = "https://ru.surveymonkey.com/r/SH8HNN7";
     private static final int DEV_INDEX = 19;
     private static final String BOXES = "input[id*=alternative]";
     private static final String CHECKBOXES = ".checkbox-button-container input";
